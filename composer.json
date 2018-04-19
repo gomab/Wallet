@@ -1,0 +1,14 @@
+{
+    "name": "Wallet",
+    "license": "MIT",
+    "type": "project",
+    "description": "Collection Music",
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "gabordemooij/redbean": "^5.1"
+    }
+}
