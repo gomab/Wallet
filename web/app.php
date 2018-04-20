@@ -1,6 +1,14 @@
 <?php
     require_once __DIR__ . '/../core/bootstrap.php';
 
-    var_dump(new \Wallet\Model\Category());
+    use RedBeanPHP\R;
 
-    var_dump(new \Wallet\Model\Item());
+    /*
+     * @var $item \Wallet\Model\Item
+     */
+    $item = R::dispense('item');
+
+    $item->title = 'Mon super titre';
+    $item->author = "gomab";
+    R::store($item);
+
